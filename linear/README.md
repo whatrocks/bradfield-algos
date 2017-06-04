@@ -70,14 +70,22 @@ How to best implement? Linked list or array?
 
 * [shenzhen.io](http://www.zachtronics.com/shenzhen-io/): computer assembly game
 
-### STDIN
+### Standard Streams
 
-STDOUT
-STDIN
-STDERROR
+#### STDIN
+* stream data (often text) going into a program
+* unless redirected, standard input is expected from the keyboard
 
-Interface to stream data with a terminal emulator
-We are not using a terminal - we are using a terminal emulator
-Every language has an interfact over STDOUT/IN
+#### STDOUT
+* stream where a program writes its output data
+* not all programs generate output (e.g. mv command)
+
+#### STDERR
+* another output stream used to output error msgs or diagnostics
+
+* Interface to stream data with a terminal emulator
+* We are not using a terminal - we are using a terminal emulator
+* Every language has an interfact over STDOUT/IN
+* GUIs rarely make use of the standard streams (closest analogy is copy and paste from one program to another)
 
 automated church bells --> loom --> punchcards --> census tabulation machines (wanted to do db-style aggregations) --> teletype
